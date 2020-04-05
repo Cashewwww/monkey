@@ -92,9 +92,9 @@ func TestExpandMacros(t *testing.T) {
 		},
 		{
 			`
-			let unless = macro(condition, consequense, alternative) {
+			let unless = macro(condition, consequence, alternative) {
 				quote(if (!(unquote(condition))) {
-					unquote(consequense);
+					unquote(consequence);
 				} else {
 					unquote(alternative);
 				});
